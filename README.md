@@ -5,7 +5,9 @@ This is annoying as the window will start in a not-focused status and
 selecting an emoji will not type it immidiately to the selected text box.
 
 This tries to fix those issues.
-Currently only works on x11 and auto typing sometime doesn't work.
+Currently only works on x11 and auto typing sometime doesn't work because of
+how some processes (rightly) suspect and ignore automated typing from random
+scripts.
 Patches welcome
 
 # set up
