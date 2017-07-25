@@ -5,10 +5,10 @@ function emoji_selector {
 	/usr/libexec/ibus-ui-emojier | grep -v Cancel && true
 }
 
-function send_text {
-	window=$0
+function send_text() {
+	window=$1
 	shift 1
-	xdotool type --clearmodifiers --window $wnd $@
+	xdotool type --clearmodifiers --window $window $@
 }
 
 wnd=$(xdotool getwindowfocus)
